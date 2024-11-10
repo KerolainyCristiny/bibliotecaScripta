@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             // Logo no início da AppBar
             Image.asset(
-              'assets/images/logo_scripta.png', // Caminho para a sua logo
+              'assets/images/logo_scripta.png', // Caminho logo
               height: 25, // Tamanho da logo
             ),
           ],
@@ -25,7 +25,6 @@ class HomeScreen extends StatelessWidget {
             icon: const Icon(Icons.notifications, color: Colors.white), // Ícone de notificação
             onPressed: () {
               // Ação ao pressionar o ícone de notificação
-              // Você pode colocar aqui a navegação para uma tela de notificações, se desejar
               print('Notificação pressionada!');
             },
           ),
@@ -55,7 +54,7 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 5),
-            const Text( // colocar o status do emprestimo ( ativo ou em atraso)
+            const Text( 
               'Acompanhe seus empréstimos por aqui.',
               style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 115, 114, 114)),
             ),
@@ -64,7 +63,7 @@ class HomeScreen extends StatelessWidget {
             // Lista de livros emprestados (como exemplo)
             Expanded(
               child: ListView.builder(
-                itemCount: 5, // Exemplo: 5 livros emprestados
+                itemCount: 5, // QUANT livros
                 itemBuilder: (context, index) {
                   return Card(
                     margin: const EdgeInsets.only(bottom: 10),
@@ -80,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                       trailing: Icon(Icons.arrow_forward_ios, size: 16),
                       onTap: () {
                         // Ação quando o usuário clicar no livro
-                        // Você pode redirecionar para uma tela com mais detalhes sobre o livro
+                        // rredirecionar para uma tela com mais detalhes sobre o livro
                       },
                     ),
                   );
