@@ -43,9 +43,9 @@ class _SplashScreenState extends State<SplashScreen> {
             
             // imagem
              Image.asset(
-                  'assets/images/logo_scripta.png', // Substitua pelo caminho real da sua imagem
-                  width: 70, // Define o tamanho da largura da imagem
-                  height: 70, // Define o tamanho da altura da imagem
+                  'assets/images/logo_scripta.png', 
+                  width: 70, // largura da imagem
+                  height: 70, //  altura da imagem
                   fit: BoxFit.contain, // Mantém a proporção da imagem
                 ),
             SizedBox(height: 50),  // Espaço entre o ícone e o indicador de carregamento
