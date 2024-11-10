@@ -158,9 +158,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 //   size: 70,  // Tamanho do ícone
                 // ),
                 Image.asset(
-                  'assets/images/logo_scripta.png', // Substitua pelo caminho real da sua imagem
-                  width: 70, // Define o tamanho da largura da imagem
-                  height: 70, // Define o tamanho da altura da imagem
+                  'assets/images/logo_scripta.png', 
+                  width: 70, 
+                  height: 70, 
                   fit: BoxFit.contain, // Mantém a proporção da imagem
                 ),
               ],
